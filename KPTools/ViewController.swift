@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
+    let array: [TagAttributedType] = [.background, .border, .pointedBackground, .pointedBorder]
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let version = App.version
@@ -31,6 +36,15 @@ class ViewController: UIViewController {
             print("4秒后执行")
         }
     }
+    
+    @IBAction func changerTag(_ sender: UIButton) {
+        let type = array[index % 4]
+        let attStr = "测试标签".tag(font: 14, textColor: .red, tagColor: .green, type: type)
+        self.label.attributedText = attStr
+        index += 1
+    }
+    
+    
 }
 
 

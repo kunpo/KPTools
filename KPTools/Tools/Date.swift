@@ -14,9 +14,10 @@ extension Date {
     public func beginMonthDate() -> Date? {
         let calendar = Calendar.current
         var start = Date()
-        let res = calendar.dateInterval(of: .month, start: &start, interval: nil, for: self)
+        var interval: TimeInterval = 0
+        let res = calendar.dateInterval(of: .month, start: &start, interval: &interval, for: self)
         if res == true {
-            return beginDate
+            return start
         } else {
             return nil
         }
@@ -38,9 +39,10 @@ extension Date {
     public func beginDate() -> Date? {
         let calendar = Calendar.current
         var start = Date()
-        let res = calendar.dateInterval(of: .day, start: &start, interval: nil, for: self)
+        var interval: TimeInterval = 0
+        let res = calendar.dateInterval(of: .day, start: &start, interval: &interval, for: self)
         if res == true {
-            return beginDate
+            return start
         } else {
             return nil
         }
@@ -59,7 +61,7 @@ extension Date {
     }
     
     public func toString(format: String) -> String {
-        var formatter = DateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.string(from: self)
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB86FB6245916DF009A6331 /* AttributedStringTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB86FB5245916DF009A6331 /* AttributedStringTag.swift */; };
 		DB2345B422AFAD2400D394EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2345B322AFAD2400D394EF /* Date.swift */; };
 		DB35356F22017FA600E37341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35356E22017FA600E37341 /* AppDelegate.swift */; };
 		DB35357122017FA600E37341 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35357022017FA600E37341 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DB86FB5245916DF009A6331 /* AttributedStringTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringTag.swift; sourceTree = "<group>"; };
 		DB2345B322AFAD2400D394EF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DB35356B22017FA600E37341 /* KPTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB35356E22017FA600E37341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				DB3AB2F12215551A00B5BC79 /* File.swift */,
 				DB3AB2F3221564E000B5BC79 /* View.swift */,
 				DB2345B322AFAD2400D394EF /* Date.swift */,
+				3DB86FB5245916DF009A6331 /* AttributedStringTag.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				DB2345B422AFAD2400D394EF /* Date.swift in Sources */,
 				DB35357122017FA600E37341 /* ViewController.swift in Sources */,
 				DB3AB2F0221552DC00B5BC79 /* Color.swift in Sources */,
+				3DB86FB6245916DF009A6331 /* AttributedStringTag.swift in Sources */,
 				DB35356F22017FA600E37341 /* AppDelegate.swift in Sources */,
 				DB3AB2EC221547F700B5BC79 /* App.swift in Sources */,
 				DB3AB2F4221564E000B5BC79 /* View.swift in Sources */,
@@ -409,7 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bst.ios.KPTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -427,7 +431,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bst.ios.KPTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

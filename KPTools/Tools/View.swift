@@ -11,7 +11,7 @@ import UIKit
 public extension UIView {
     
     ///获取view的Controller
-    public var viewController: UIViewController? {
+    var viewController: UIViewController? {
         get {
             var nextResponder = self.next
             while let controller = nextResponder {
@@ -32,7 +32,7 @@ public extension UIView {
     }
     
     ///获取view的navigationController
-    public var navigationController: UINavigationController? {
+    var navigationController: UINavigationController? {
         get {
             var nextResponder = self.next
             while let nav = nextResponder {
@@ -45,7 +45,7 @@ public extension UIView {
         }
     }
     
-    public var tabBarController: UITabBarController? {
+    var tabBarController: UITabBarController? {
         get {
             var nextResponder = self.next
             while let nav = nextResponder {
@@ -58,4 +58,41 @@ public extension UIView {
         }
     }
     
+}
+
+extension UIView {
+    @IBInspectable var bestRadius: CGFloat {
+        set {
+            self.clipsToBounds = true
+            self.layer.cornerRadius = newValue
+        }
+        
+        get {
+            return self.layer.cornerRadius
+        }
+    }
+    
+    @IBInspectable var bestBorderWidth: CGFloat {
+        set {
+            self.layer.borderWidth = newValue
+        }
+        
+        get {
+            return self.layer.borderWidth
+        }
+    }
+    
+    @IBInspectable var bestBorderColor: UIColor? {
+        set {
+            self.layer.borderColor = newValue?.cgColor
+        }
+        
+        get {
+            guard let color = self.layer.borderColor else {
+                return nil
+            }
+            let c = UIColor(cgColor: color)
+            return c
+        }
+    }
 }
