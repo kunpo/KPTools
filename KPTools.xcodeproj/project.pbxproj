@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6A5E2624AD810800D97013 /* SoundAndVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A5E2324AD810700D97013 /* SoundAndVibrate.swift */; };
+		3D6A5E2724AD810800D97013 /* ViewShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A5E2424AD810700D97013 /* ViewShortcut.swift */; };
+		3D6A5E2824AD810800D97013 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A5E2524AD810800D97013 /* Image.swift */; };
 		3DB86FB6245916DF009A6331 /* AttributedStringTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB86FB5245916DF009A6331 /* AttributedStringTag.swift */; };
 		DB2345B422AFAD2400D394EF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2345B322AFAD2400D394EF /* Date.swift */; };
 		DB35356F22017FA600E37341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35356E22017FA600E37341 /* AppDelegate.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D6A5E2324AD810700D97013 /* SoundAndVibrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAndVibrate.swift; sourceTree = "<group>"; };
+		3D6A5E2424AD810700D97013 /* ViewShortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewShortcut.swift; sourceTree = "<group>"; };
+		3D6A5E2524AD810800D97013 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		3DB86FB5245916DF009A6331 /* AttributedStringTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringTag.swift; sourceTree = "<group>"; };
 		DB2345B322AFAD2400D394EF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DB35356B22017FA600E37341 /* KPTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +92,9 @@
 				DB3AB2F3221564E000B5BC79 /* View.swift */,
 				DB2345B322AFAD2400D394EF /* Date.swift */,
 				3DB86FB5245916DF009A6331 /* AttributedStringTag.swift */,
+				3D6A5E2524AD810800D97013 /* Image.swift */,
+				3D6A5E2324AD810700D97013 /* SoundAndVibrate.swift */,
+				3D6A5E2424AD810700D97013 /* ViewShortcut.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -237,9 +246,12 @@
 				DB35357122017FA600E37341 /* ViewController.swift in Sources */,
 				DB3AB2F0221552DC00B5BC79 /* Color.swift in Sources */,
 				3DB86FB6245916DF009A6331 /* AttributedStringTag.swift in Sources */,
+				3D6A5E2624AD810800D97013 /* SoundAndVibrate.swift in Sources */,
 				DB35356F22017FA600E37341 /* AppDelegate.swift in Sources */,
+				3D6A5E2824AD810800D97013 /* Image.swift in Sources */,
 				DB3AB2EC221547F700B5BC79 /* App.swift in Sources */,
 				DB3AB2F4221564E000B5BC79 /* View.swift in Sources */,
+				3D6A5E2724AD810800D97013 /* ViewShortcut.swift in Sources */,
 				DB3AB2F22215551A00B5BC79 /* File.swift in Sources */,
 				DB3AB2EE22154E2C00B5BC79 /* System.swift in Sources */,
 				DB398E332212A4B500CD7A27 /* Model.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 ///标签的样式
-public enum TagAttributedType {
+@objc public enum TagAttributedType: Int {
     ///边框
     case border
     ///背景
@@ -219,4 +219,11 @@ class TagBackground: UIView {
     
 }
 
-
+///将字符串转化为标签的富文本
+@objc public class AttributedStringTag: NSObject {
+    ///将字符串转化为标签
+    @objc public static func tag(str: String, font: CGFloat, textColor: UIColor, tagColor: UIColor, type: TagAttributedType) -> NSAttributedString {
+        return str.tag(font: font, textColor: textColor, tagColor: tagColor, type: type)
+    }
+    
+}
