@@ -159,5 +159,9 @@ public extension UIView {
             layer.borderColor = newValue?.cgColor
         }
     }
+    
+    @objc var isNil: Bool {
+        return self.subviews.count > 0
+    }
 }
 
